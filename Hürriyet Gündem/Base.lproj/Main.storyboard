@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="SGd-HA-9fI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Hürriyet Gündem-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hu_rriyet_Gu_ndem" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YKJ-dK-SVP" customClass="MagneticView" customModule="Magnetic">
+                                <rect key="frame" x="0.0" y="146" width="375" height="449"/>
+                                <color key="backgroundColor" red="0.93348252590250813" green="0.91565136713159656" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bu uygulama Hurriyet Developer API kullanılarak bilgi amaçlı yapılmıştır." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJX-Rn-kJG">
+                                <rect key="frame" x="26" y="633" width="324" height="14"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Italic" family="Avenir Next" pointSize="10"/>
+                                <color key="textColor" red="0.67385648289461619" green="0.67456743200399849" blue="0.70039264896373055" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXE-8R-P4I">
+                                <rect key="frame" x="16" y="84" width="343" height="41"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Hurriyet.com'a bugün eklenen haberlerdeki en sık kullanılan etiketler ile Türkiye'nin gündemini öğrenmek artık çok kolay!">
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="AvenirNext-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YKJ-dK-SVP" firstAttribute="top" secondItem="PXE-8R-P4I" secondAttribute="bottom" constant="21" id="7Mc-SN-osk"/>
+                            <constraint firstItem="YKJ-dK-SVP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7tF-Tn-IIF"/>
+                            <constraint firstItem="PXE-8R-P4I" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Gvw-IU-fRP"/>
+                            <constraint firstItem="cJX-Rn-kJG" firstAttribute="top" secondItem="YKJ-dK-SVP" secondAttribute="bottom" constant="38" id="Tjq-KG-6MC"/>
+                            <constraint firstItem="YKJ-dK-SVP" firstAttribute="centerX" secondItem="cJX-Rn-kJG" secondAttribute="centerX" id="XEc-xv-1tc"/>
+                            <constraint firstItem="PXE-8R-P4I" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="sfV-PZ-Rc0"/>
+                            <constraint firstItem="cJX-Rn-kJG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="txU-hc-r1j"/>
+                            <constraint firstAttribute="bottom" secondItem="cJX-Rn-kJG" secondAttribute="bottom" constant="20" symbolic="YES" id="uuc-H4-hst"/>
+                            <constraint firstItem="PXE-8R-P4I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="y78-gW-qwX"/>
+                            <constraint firstItem="YKJ-dK-SVP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="82" id="yUR-4Y-doY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Hürriyet Gündem" id="KEz-OJ-vIA"/>
+                    <connections>
+                        <outlet property="magneticView" destination="YKJ-dK-SVP" id="QrX-l5-F9C"/>
+                        <outlet property="view" destination="8bC-Xf-vdC" id="Kyc-Qe-abn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="137.18140929535232"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="J8Z-Zx-jZp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SGd-HA-9fI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="h2c-Jy-S9D">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="94L-gm-V7u"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ALt-aY-QMo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>

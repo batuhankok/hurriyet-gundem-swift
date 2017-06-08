@@ -1,0 +1,6 @@
+framework module Magnetic {
+  umbrella header "Magnetic-umbrella.h"
+
+  export *
+  module * { export * }
+}

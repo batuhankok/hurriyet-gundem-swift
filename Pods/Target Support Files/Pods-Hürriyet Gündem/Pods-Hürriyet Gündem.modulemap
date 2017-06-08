@@ -1,0 +1,6 @@
+framework module Pods_Hu_rriyet_Gu_ndem {
+  umbrella header "Pods-Hürriyet Gündem-umbrella.h"
+
+  export *
+  module * { export * }
+}
