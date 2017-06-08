@@ -6,8 +6,9 @@ target 'Hürriyet Gündem' do
   use_frameworks!
 
   pod 'Alamofire', '~> 4.4'
-  pod 'JASON', '~> 3.0'
+  pod 'SwiftyJSON'
   pod 'Magnetic'
+  pod 'RSLoadingView'
 
   # Pods for Hürriyet Gündem
 

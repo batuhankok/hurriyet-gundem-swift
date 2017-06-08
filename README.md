@@ -7,10 +7,13 @@
 ## Hürriyet.com Gündem
 The project written in Swift for iOS. It can be good example to make an app by using Hurriyet API, Alamofire, JSON and Bubble View (like Apple Music). To use this app, please login Hurriyet Developer portal with your account and change the API Key is in ViewController.swift with your private API Key. Also, donot forget that, Hurriyet API allows 5 query in a second and 500 request per an hour.
 
+Special thanks for [HeyGidi] by **[Alpcan Aydın]**
+
 ## Used CocaPods
 1. [Alamofire] >= 4.4
-2. [JASON] >= 3.0
+2. [SwiftyJSON] >= 3.0
 3. [Magnetic]
+4. [RSLoadingView]
 
 Thanks for these libraries to make my life easier!
 
@@ -23,5 +26,8 @@ Thanks for these libraries to make my life easier!
 
 [@Ahmet Hasırcıoğlu]: https://github.com/roxaxis
 [Alamofire]: https://github.com/Alamofire/Alamofire
-[JASON]: https://github.com/delba/JASON
+[SwiftyJSON]: https://github.com/SwiftyJSON/SwiftyJSON
 [Magnetic]: https://github.com/efremidze/Magnetic
+[RSLoadingView]: https://github.com/roytornado/RSLoadingView
+[HeyGidi]: https://github.com/alpcanaydin/heygidi
+[@Alpcan Aydın]: https://github.com/alpcanaydin

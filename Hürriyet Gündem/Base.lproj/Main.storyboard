@@ -59,9 +59,16 @@
                             <constraint firstItem="YKJ-dK-SVP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="82" id="yUR-4Y-doY"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Hürriyet Gündem" id="KEz-OJ-vIA"/>
+                    <navigationItem key="navigationItem" title="Hürriyet Gündem" id="KEz-OJ-vIA">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="seO-RC-doP">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="refreshButtonTapped:" destination="BYZ-38-t0r" id="qBO-2t-G2p"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="magneticView" destination="YKJ-dK-SVP" id="QrX-l5-F9C"/>
+                        <outlet property="magneticView" destination="YKJ-dK-SVP" id="oNW-B9-anm"/>
                         <outlet property="view" destination="8bC-Xf-vdC" id="Kyc-Qe-abn"/>
                     </connections>
                 </viewController>

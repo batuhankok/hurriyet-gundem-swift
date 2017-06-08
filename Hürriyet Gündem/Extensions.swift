@@ -8,6 +8,8 @@
 
 import Foundation
 import UIKit
+import SpriteKit
+import Magnetic
 
 
 extension CAGradientLayer {
@@ -175,5 +177,30 @@ extension CGPoint {
         return hypot(point.x - x, point.y - y)
     }
     
+}
+
+
+// MARK: - MagneticDelegate
+extension ViewController: MagneticDelegate {
+    
+    func magnetic(_ magnetic: Magnetic, didSelect node: Node) {
+        print("didSelect -> \(node)")
+    }
+    
+    func magnetic(_ magnetic: Magnetic, didDeselect node: Node) {
+        print("didDeselect -> \(node)")
+    }
+    
+}
+
+// MARK: - ImageNode
+class ImageNode: Node {
+    override var image: UIImage? {
+        didSet {
+            sprite.texture = image.map { SKTexture(image: $0) }
+        }
+    }
+    override func selectedAnimation() {}
+    override func deselectedAnimation() {}
 }
 
