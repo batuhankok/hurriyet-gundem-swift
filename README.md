@@ -15,8 +15,7 @@ The project written in Swift for iOS. It can be good example to make an app by u
 Thanks for these libraries to make my life easier!
 
 ## Live Screenshot
-![Main View](https://github.com/batuhankok/hurriyet-gundem-swift/blob/master/screenshots/screenshot.gif?raw=true)
-<img src="https://github.com/batuhankok/hurriyet-gundem-swift/blob/master/screenshots/screenshot.gif?raw=true" height="400">
+<img src="https://github.com/batuhankok/hurriyet-gundem-swift/blob/master/screenshots/screenshot.gif?raw=true" height="470">
 
 ## Contributers
 - [@Ahmet Hasırcıoğlu]
